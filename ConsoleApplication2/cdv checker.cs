@@ -18,7 +18,10 @@ namespace om
             else Console.WriteLine("ok");
             int sum = 0;
             for (int i=0; i<10; i++) {
-                sum+=((int) om[i] - 48) * (i+1); 
+                int digit = (int) om[i] - 48;
+                if(digit <0 || digit >9) Console.WriteLine("Rossz számjegy");
+                
+                sum+= digit * (i+1); 
             }
             int cdv = sum % 11;
 
