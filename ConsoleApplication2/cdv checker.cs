@@ -18,7 +18,7 @@ namespace om
             else Console.WriteLine("ok");
             int sum = 0;
             for (int i=0; i<10; i++) {
-                sum+=((int) om[i]) * (i+1); 
+                sum+=((int) om[i] - 48) * (i+1); 
             }
             int cdv = sum % 11;
 
